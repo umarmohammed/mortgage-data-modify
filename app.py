@@ -144,5 +144,5 @@ X, y = load("mortgage_data_preprocess.pkl.gz")
 dfOrig = pd.concat([X, y], axis=1)
 
 dfMod = modify_data(dfOrig)
-dump(dfMod, "mortgage_data_modified.pkl.gz")
+dfMod.to_pickle("mortgage_data_modified.pkl.gz")
 
