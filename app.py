@@ -146,6 +146,3 @@ dfOrig = pd.concat([X, y], axis=1)
 dfMod = modify_data(dfOrig)
 dump(dfMod, "mortgage_data_modified.pkl.gz")
 
-ypred_prob = [0.3, 0.2, 0.8, 0.7]
-labels = [1, 1, 0, 0]
-np.abs(np.array(labels) - np.array(ypred_prob))
